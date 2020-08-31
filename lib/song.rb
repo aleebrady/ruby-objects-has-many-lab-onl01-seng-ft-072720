@@ -1,5 +1,3 @@
-require 'pry'
-
 class Song 
   
   attr_accessor :name, :artist
@@ -17,7 +15,6 @@ class Song
   
   def artist_name
     if self.artist
-      binding.pry
       return self.artist.name
     else
       nil 
