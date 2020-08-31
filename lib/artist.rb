@@ -6,7 +6,8 @@ class Artist
     @name = name
   end
   
-  def songs 
+  def songs
+    binding.pry
     Song.all.select {|song| song.artist == self}
   end
   
